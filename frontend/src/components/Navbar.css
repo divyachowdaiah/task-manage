@@ -1,0 +1,88 @@
+/* Navbar.css */
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: rgb(244, 235, 235);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0);
+    align-items: center;
+  }
+  
+  .navbar-title {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .navbar-menu {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-menu {
+      display: flex;
+      gap: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+  
+  .navbar-link {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 4px;
+  }
+  
+  .navbar-link-primary {
+    color: #ff00dd;
+  }
+  
+  .navbar-link:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .navbar-button {
+    background-color: #ff00bb;
+    color: rgb(239, 237, 237);
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+  }
+  
+  .navbar-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .navbar-icon {
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-close {
+    margin: 1rem;
+    text-align: right;
+    cursor: pointer;
+  }
+  

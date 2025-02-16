@@ -1,0 +1,80 @@
+/* General form styling */
+.task-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.task-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+.input-group input, .input-group select, .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Error messages */
+.error-text {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+.btn.primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+.btn.danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+.btn.danger:hover {
+  background-color: #a71d2a;
+}
+.btn.secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+.btn.secondary:hover {
+  background-color: #545b62;
+}

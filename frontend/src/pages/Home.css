@@ -1,0 +1,47 @@
+/* Home.css */
+.home-container {
+  text-align: center;
+  
+  background: #4a5568; /* Gray-500 */
+  color: rgb(203, 60, 60);
+  height: 80vh;
+  padding: 2rem 0;
+}
+
+.home-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.signup-link {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  display: block;
+  transition: margin 0.3s ease-in-out;
+}
+
+.signup-link:hover span {
+  margin-left: 0.5rem;
+}
+
+.welcome-header {
+  font-size: 1.125rem;
+  margin: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d1d5db; /* Gray-300 */
+}
+.home-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.home-logo {
+  width: 150px;  /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%;  /* Makes it round */
+  object-fit: cover;  /* Ensures the image fits well */
+  display: block;
+  margin: 0 auto 20px;  /* Center the image */
+  border: 3px solid #007bff; /* Optional: Adds a border */
+}
