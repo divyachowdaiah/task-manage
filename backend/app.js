@@ -9,13 +9,10 @@ const taskRoutes = require("./routes/taskRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
-app.use(cors());
-app.get('/', (req, res) =>{
-    res.send({
-      activeStatus: true,
-      error:false,
-    })
-})
+app.use(cors({
+  origin: ["http://localhost:3000","https://task-site12.netlify.app/"]
+}));
+
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {
   if (err) throw err;
