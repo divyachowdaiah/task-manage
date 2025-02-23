@@ -10,7 +10,12 @@ const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
 app.use(cors());
-
+app.get('/', (req, res) =>{
+    res.send({
+      activeStatus: true,
+      error:false,
+    })
+})
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {
   if (err) throw err;
